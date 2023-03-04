@@ -18,5 +18,8 @@ add_action('wp_loaded', function(){
 	}
 });
 
+add_action('in_admin_footer', function() {
+	echo '<div style="clear: both; width: 100%; display: block;"><a href="'.admin_url('?ft_ip').'">Get server IP</a></div>';
+});
 
 
